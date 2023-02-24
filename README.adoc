@@ -1,17 +1,30 @@
-Nettoyez votre environnement en tapant la commande suivante dans votre terminal :
-[source, shell]
-mvn clean
-Compilez le code avec la commande suivante :
-[source, shell]
+= Instructions de compilation avec Maven
+
+== Dans un premier temps :
+
+Nettoyez votre environnement en tapant mvn clean dans votre terminal.
+
+== Dans un second temps : 
+
+Compilez le code avec la commande : 
+
+....
 mvn compile
-Votre fichier est maintenant compilé.
+....
 
-Pour créer un fichier JAR, utilisez la commande suivante :
-[source, shell]
 
+Le fichier est maintenant compilé.
+
+Pour créer un fichier JAR, utilisez la commande : 
+....
 mvn package
-Pour exécuter l'application, exécutez la commande suivante dans votre terminal :
-[source, shell]
-java -jar target/tp_qualite-1.0.jar
-Pour générer une documentation JavaDoc, assurez-vous d'abord de créer la documentation dans vos programmes, puis modifiez votre fichier pom.xml pour ajouter des plug-ins pour générer la documentation. Consultez le tutoriel suivant pour plus d'informations : https://mkyong.com/maven/generate-javadoc-jar-for-maven-based-project/
-Si vous rencontrez des difficultés ou pour plus d'informations, consultez le tutoriel mentionné ci-dessus.
+....
+
+Pour exécuter l’application, tapez dans votre terminal. : 
+....
+java -jar target/tp_qualite-1.0.jar 
+....
+
+== Enfin : 
+
+Pour générer une documentation JavaDoc, assurez-vous d’abord de créer la documentation pour vos programmes, puis modifiez votre fichier pom.xml pour ajouter des plug-ins pour générer la documentation. Pour plus d’informations, consultez le tutoriel suivant : https://mkyong.com/maven/generate-javadoc-jar-for-maven-based-project/
